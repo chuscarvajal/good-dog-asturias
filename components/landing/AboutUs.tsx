@@ -2,16 +2,16 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <section id="quienes-somos" className="py-16 lg:py-24 bg-white border-t border-[#e0e0e0]">
+    <section id="nosotros" className="py-16 lg:py-24 bg-white border-t border-[#e0e0e0]">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Photo */}
           <div className="relative h-[400px] md:h-[500px] overflow-hidden">
             <Image
-              src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEBXprg29VKlPP-EQZQj_TfGhbXcHpp7dO_koAl2sLXGiGgoPmLkeNip8g9uaPqCwWnw-voOSXPlLTNe2wgqNliWOabL9Ll1081h3io30AOg1m7Y-hizFHhUh3BWFVQeVjMJTzOLg=w800-h600-k-no"
-              alt="Good Dog — Adiestramiento Canino"
+              src="/images/silvia-con-perro.jpg"
+              alt="Silvia, Educadora Canina — con su perro en San Agustín del Guadalix"
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
           </div>
 
@@ -21,13 +21,13 @@ export default function AboutUs() {
               Quiénes Somos
             </h2>
             <p className="text-[#666] text-sm leading-relaxed">
-              Somos Good Dog, una escuela de adiestramiento canino ubicada en Allende, Asturias. Llevamos años trabajando con perros de todos los tamaños, edades y caracteres, ayudando a sus dueños a entenderlos y a construir una relación basada en el respeto y la comunicación.
+              Soy Silvia, educadora canina en San Agustín del Guadalix, al norte de Madrid. Me dedico a la educación y el bienestar canino desde un enfoque positivo, respetuoso y adaptado a cada perro y a cada familia.
             </p>
             <p className="text-[#666] text-sm leading-relaxed">
-              Trabajamos en plena naturaleza asturiana, lejos del ruido de la ciudad, en un entorno tranquilo que favorece el aprendizaje de tu perro. Nuestro método se basa exclusivamente en el refuerzo positivo: sin castigos, sin intimidación, con paciencia y cariño.
+              Con 5.0 estrellas en Google y 38 reseñas de clientes reales, mi trabajo habla por sí solo. Atiendo tanto de forma presencial como online, para que la distancia no sea un obstáculo para mejorar la relación con tu perro.
             </p>
             <div className="flex flex-wrap gap-2">
-              {["4.8★ Google", "Refuerzo Positivo", "Asturias"].map((badge) => (
+              {["5.0★ · 38 Reseñas", "Educación en Positivo", "Presencial y Online", "San Agustín del Guadalix"].map((badge) => (
                 <span
                   key={badge}
                   className="border border-[#e0e0e0] text-[#2b2b2b] text-xs font-semibold uppercase tracking-[0.1em] px-4 py-2"
